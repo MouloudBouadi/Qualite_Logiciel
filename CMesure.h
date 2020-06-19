@@ -14,7 +14,7 @@
  * 
  * AUTEUR       : Mouloud Jean-Mathieu Etienne
  * VERSION CVS  : V1 
- * DATE         : 18/06/2020
+ * DATE         : 19/06/2020
  * 
  ***************************************************************/ 
 
@@ -22,19 +22,18 @@ class CMesure
 {
 
 private:
-	//temps de parours
-	//nombre de mesure
-	//consommation du moteur
+	int TempsMesure;
+	int ConsoMesure;
 
 public:
 	CMesure();
 	~CMesure();
 
-
-
+	void NouvelleMesure();
 };
 
 CMesure::CMesure()
 {
-
+	TempsMesure = 0; //secondes
+	ConsoMesure = 0; //Watts
 }

@@ -10,7 +10,7 @@
  * SOUS-SYSTEME : ROBIOT SIMU
  * 
  * SOURCE       : CCapteur.h
- * PRESENTATION : fichier entête de définition de la capteur
+ * PRESENTATION : fichier entête de définition du cpateur de signaux balise
  * 
  * AUTEUR       : Mouloud Jean-Mathieu Etienne
  * VERSION CVS  : V1 

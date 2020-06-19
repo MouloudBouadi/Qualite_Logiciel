@@ -10,7 +10,7 @@
  * SOUS-SYSTEME : ROBIOT SIMU
  * 
  * SOURCE       : CCompas.h
- * PRESENTATION : fichier entête de définition du compas
+ * PRESENTATION : fichier entête de définition du compas. Géolocalisation du robiot
  * 
  * AUTEUR       : Mouloud Jean-Mathieu Etienne
  * VERSION CVS  : V1 
@@ -36,10 +36,4 @@ public:
 	void SetCompasY(int _iCoordY);
 	
 };
-
-CCompas::CCompas()
-{
-	iCoordX = 0;
-	iCoordY = 0;
-}
 

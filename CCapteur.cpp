@@ -10,7 +10,7 @@
  * SOUS-SYSTEME : ROBIOT SIMU
  * 
  * SOURCE       : CCapteur.cpp
- * PRESENTATION : fichier source de définition de la capteur
+ * PRESENTATION : fichier source de définition du capteur de signaux balise
  * 
  * AUTEUR       : Mouloud Jean-Mathieu Etienne
  * VERSION CVS  : V1 

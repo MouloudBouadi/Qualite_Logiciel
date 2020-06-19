@@ -1,4 +1,6 @@
 #pragma once
+#include <string> 
+using namespace std ;
 
 /**************************************************************
  * 
@@ -14,35 +16,23 @@
  * 
  * AUTEUR       : Mouloud Jean-Mathieu Etienne
  * VERSION CVS  : V1 
- * DATE         : 18/06/2020
+ * DATE         : 19/06/2020
  * 
  ***************************************************************/ 
-
 class CMoteur
 {
-
-
-//Conso moyenne 14,0 Watts
-//Vitesse de déplacement 0,42m/s
-//Pente maximale 10%
-
 private:
-	double dCouple;
-	int iNum;
-;
+	int iEtatMoteurGauche; //14W 0.42m/s
+	int iEtatMoteurDroite; //14W 0.42m/s
 
-	//temps de parcours
-	//nombre de mesure
-	//consommation du moteur
 	
 public:
 	CMoteur();
 	~CMoteur();
-
-	
+	int GetEtatMoteur(string IDmoteur);
+	void SetEtatMoteur(int _iEtatMoteurGauche, int _iEtatMoteurDroit);
+    int Avancer();
+    int Reculer();
+    int Gauche();
+    int Droite();
 };
-
-CMoteur::CMoteur()
-{
-
-}

@@ -1,6 +1,5 @@
 #pragma once
-#include "CArbre.h"
-#include <vector>
+#include <iostream>
 
 /**************************************************************
  * 
@@ -11,25 +10,37 @@
  * 
  * SOUS-SYSTEME : ROBIOT SIMU
  * 
- * SOURCE       : CCommande.h
- * PRESENTATION : fichier entête de définition de la commande
+ * SOURCE       : CArbre.h
+ * PRESENTATION : fichier entête de définition d'arbres
  * 
  * AUTEUR       : Mouloud Jean-Mathieu Etienne
  * VERSION CVS  : V1 
  * DATE         : 18/06/2020
  * 
- ***************************************************************/ 
+ ***************************************************************/
 
-class CCommande
+class CArbre
 {
 private:
-	std::vector<CArbre*> vArbres;
+	int iArbreX;
+	int iArbreY;
+	int iStatut;
 
+	
 public:
-	CCommande();
-	~CCommande();
+	enum statusArbre {
+		NONMESURE, MESURE
+	};
 
-	void addArbre(CArbre* p_arbre);
-	void MoveToNextArbre();
+	CArbre();
+	CArbre(int _iArbreX, int _iArbreY, int _iStatut);
+
+	int Mesure();
+
+	int getArbreX();
+	int getArbreY();
+
+	~CArbre();
+
 };
 
