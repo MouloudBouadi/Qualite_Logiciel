@@ -1,6 +1,11 @@
 #pragma once
 #include "CArbre.h"
 #include <vector>
+#include <string>
+#include <fstream>
+#include <iostream>
+
+using namespace std;
 
 /**************************************************************
  * 
@@ -27,6 +32,7 @@ private:
 
 public:
 	CCommande();
+	//CCommande(std::string s_monFichier);
 	~CCommande();
 
 	void addArbre(CArbre* p_arbre);

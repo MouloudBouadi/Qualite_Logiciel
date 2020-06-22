@@ -1,4 +1,13 @@
 #pragma once
+//#include "CArbre.h"
+#include "CBatterie.h"
+#include "CCapteur.h"
+#include "CCommande.h"
+#include "CCompas.h"
+#include "CControleur.h"
+#include "CDijsktra.h"
+#include "CMesure.h"
+#include "CMoteur.h"
 
 /**************************************************************
  * 
@@ -28,8 +37,3 @@ public:
 	~CControleur();
 	
 };
-
-CControleur::CControleur()
-{
-
-}

@@ -50,23 +50,9 @@ CArbre::CArbre(int _iArbreX, int _iArbreY, int _iStatut)
 *
 * **************************************************************/
 
-int CArbre::Mesure()
+void CArbre::setStatus(int _iStatut)
 {
-	if (iStatut == NONMESURE)
-	{
-		iStatut = MESURE;
-		return 0;
-	}
-	if (iStatut == MESURE)
-	{
-		std::cout << "L'arbre a déjà été mesuré \n";
-		return 0;
-	}
-	else
-	{
-		return -1;
-	}
-
+	iStatut = _iStatut;
 }
 
 /**************************************************************

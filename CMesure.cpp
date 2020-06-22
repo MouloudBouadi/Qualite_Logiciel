@@ -18,14 +18,25 @@
  *
  ***************************************************************/
 
+CMesure::CMesure()
+{
+	TempsMesure = 0; //secondes
+	ConsoMesure = 0; //Watts
+	
+}
+
  /**************************************************************
  * METHODE : CMesure::NouvelleMesure()
  * PRESENTATION : Ajoute le temps de mesure et la consomation d'une mesure au totaux.
  *
  * **************************************************************/
 
-void CMesure::NouvelleMesure()
+void CMesure::NouvelleMesure(CArbre *p_Arbre)//donner l'arbre en paramètre'
 {
 	TempsMesure += 5;
 	ConsoMesure += 30;
+	p_arbre->
+    //ConsoMoteur += 14;
+    //carte mère 12.5watt
+	//appeler la fonction monArbre.setStatutArbre(MESURE)
 }

@@ -1,5 +1,6 @@
 #include "CCommande.h"
 
+using namespace std; 
 /**************************************************************
  * 
  * Copyright (c) ecotree - contrat n° TNK/DEV/CCTP-20200615  
@@ -26,9 +27,27 @@
 
 CCommande::CCommande()
 {
-	//rempli le vecteur d'arbre en lisant les coordonnées dans le fichier de simu
-	//initialisation des arbres au statut NONMESURE
-	//Utilise la méthode addArbre'
+	int iX;
+	int iY;
+
+	ifstream monFlux("listeDeControle.txt");
+
+	if(monFlux)
+	{
+		while(! monFlux.eof())
+		{
+			monFlux >> iX;
+			cout << "iX :" << iX <<endl;
+			monFlux >> iY;
+			cout << "iY :" << iY <<endl;
+			CArbre* pArbre = new CArbre(iX, iY, CArbre::NONMESURE);  //création d'un arbre avec les données lues'
+			addArbre(pArbre); //ajout de l'arbre au vecteur d'arbres
+		}
+	}
+	else
+	{
+    cout << "ERREUR: Impossible d'ouvrir le fichier en lecture." << endl;
+	}
 }
 
 /**************************************************************
@@ -53,3 +72,4 @@ void CCommande::MoveToNextArbre()
 {
 
 }
+

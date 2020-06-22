@@ -35,7 +35,7 @@ public:
 	CArbre();
 	CArbre(int _iArbreX, int _iArbreY, int _iStatut);
 
-	int Mesure();
+	void setStatus(int _iStatut);
 
 	int getArbreX();
 	int getArbreY();

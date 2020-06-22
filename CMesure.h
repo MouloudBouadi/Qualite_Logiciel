@@ -1,4 +1,5 @@
 #pragma once
+#include "CArbre.h"
 
 /**************************************************************
  * 
@@ -29,11 +30,9 @@ public:
 	CMesure();
 	~CMesure();
 
-	void NouvelleMesure();
+	void NouvelleMesure(CArbre *p_Arbre);
 };
 
-CMesure::CMesure()
-{
-	TempsMesure = 0; //secondes
-	ConsoMesure = 0; //Watts
-}
+
+
+
