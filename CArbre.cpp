@@ -50,7 +50,7 @@ CArbre::CArbre(int _iArbreX, int _iArbreY, int _iStatut)
 *
 * **************************************************************/
 
-void CArbre::setStatus(int _iStatut)
+void CArbre::setStatut(int _iStatut)
 {
 	iStatut = _iStatut;
 }
@@ -77,6 +77,12 @@ int CArbre::getArbreX()
 int CArbre::getArbreY()
 {
 	return iArbreY;
+}
+
+
+int CArbre::getStatut()
+{
+	return iStatut;
 }
 
 /**************************************************************

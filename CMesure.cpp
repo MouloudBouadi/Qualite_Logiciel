@@ -35,7 +35,7 @@ void CMesure::NouvelleMesure(CArbre *p_Arbre)//donner l'arbre en paramètre'
 {
 	TempsMesure += 5;
 	ConsoMesure += 30;
-	p_arbre->
+	p_Arbre->setStatut(1); //le statut passe à MESURE
     //ConsoMoteur += 14;
     //carte mère 12.5watt
 	//appeler la fonction monArbre.setStatutArbre(MESURE)
